@@ -1,20 +1,21 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pip-test",
-    version="0.0.1",
-    author="Monukushwaha",
-    author_email="monu17@navgurukul.org",
-    description="It's pip... with git.",
+    name='pip-test',
+    version='0.0.3',
+    author='Monukushwaha',
+    author_email='monu17@navgurukul.org',
+    description='Testing installation of Package',
     long_description=long_description,
-    url="https://github.com/Monukushwaha/pip-test",
-    packages=setuptools.find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
+    long_description_content_type="text/markdown",
+    url='https://github.com/Monukushwaha/pip-test',
+    project_urls = {
+        "Bug Tracker": "https://github.com/Monukushwaha/pip-test/issues"
+    },
+    license='MIT',
+    packages=['pip-test'],
+    install_requires=['requests'],
 )
